@@ -47,7 +47,7 @@ Y= A⊕B
 **Ex-NOR gate**
 
 The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle represents inversion.
-Y= A⊕B
+Y= (A⊕B)'
 
 **Procedure** 
 
@@ -63,17 +63,31 @@ Y= A⊕B
 
 
 **PROGRAM**
-
 Program for logic gates and verify its truth table in quartus using Verilog programming
-
- Developed by: RegisterNumber: 
- 
+ Developed by: RegisterNumber: 25017133
+```
+module exp1(A,B,C,D,E,F,G,H,I);
+input A,B;
+output C,D,E,F,G,H,I;
+assign C=A&B;
+assign D=A|B;
+assign E=~A;
+assign F=A^B;
+assign G=~(A&B);
+assign H=~(A|B);
+assign I=~(A^B);
+endmodule 
+``` 
 **Logic symbol & Truthtable**
+<img width="1336" height="832" alt="image" src="https://github.com/user-attachments/assets/d3b95b0f-ac75-41ed-afbe-13cd91a695f0" />
+<img width="625" height="309" alt="image" src="https://github.com/user-attachments/assets/6a5866b8-7d8a-4190-a8b2-57a96b902bc2" />
 
 **RTL realization Output:** 
+<img width="1336" height="832" alt="image" src="https://github.com/user-attachments/assets/b0c55c55-7af2-4538-8266-c94e2a21e29c" />
 
 **RTL**
-
+Timing diagram
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/73d13250-3213-4d35-8b4d-48bbb4770c90" />
 **Result:**
-
+Thus,the truth table of logic gates in Quartus II using Verilog programming is verified successfully.
 
